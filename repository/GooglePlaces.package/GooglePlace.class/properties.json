@@ -1,0 +1,16 @@
+{
+	"category" : "GooglePlaces",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ApiKey" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"details",
+		"nickname" ],
+	"name" : "GooglePlace",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "GooglePlaces",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ApiKey" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GooglePlacePrediction",
+	"pools" : [
+		 ],
+	"super" : "GooglePlacesObject",
+	"type" : "normal" }

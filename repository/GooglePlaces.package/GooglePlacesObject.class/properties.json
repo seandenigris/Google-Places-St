@@ -1,0 +1,14 @@
+{
+	"category" : "GooglePlaces",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GooglePlacesObject",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }
