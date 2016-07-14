@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfGooglePlaces",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfGooglePlaces",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
