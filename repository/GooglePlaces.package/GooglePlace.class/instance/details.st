@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 details
 	| urlString result |
 	details ifNotNil: [ ^ details ].
