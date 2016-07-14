@@ -1,3 +1,3 @@
 accessing
 apiKey
-	^ ApiKey
+	^ ApiKey ifNil: [ UIManager default request: 'Google Places API Key?' ]
