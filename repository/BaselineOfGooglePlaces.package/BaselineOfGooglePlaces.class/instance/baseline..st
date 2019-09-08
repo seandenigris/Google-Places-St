@@ -5,11 +5,8 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			baseline: 'BabyPhexample' with: [
-				spec repository: 'github://seandenigris/Baby-Phexample:master/repository' ];
-			project: 'NeoJSON' with: [
-				spec
-					className: #ConfigurationOfNeoJSON;
-					versionString: #'stable';
-					repository: 'http://mc.stfx.eu/Neo' ].
+				spec repository: 'github://seandenigris/Baby-Phexample' ];
+			baseline: 'NeoJSON' with: [
+				spec repository: 'github://svenvc/NeoJSON' ].
 		spec package: #GooglePlaces with: [
 				spec requires: #('BabyPhexample' 'NeoJSON' ). ]. ].
