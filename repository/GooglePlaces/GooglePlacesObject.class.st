@@ -6,11 +6,15 @@ Class {
 
 { #category : #'as yet unclassified' }
 GooglePlacesObject class >> fromUrl: aUrl [
-	| json result |
-	json := aUrl retrieveContents.
-	result := NeoJSONReader fromString: json.
-	(result at: 'status') = 'OK' ifFalse: [ self error ].
-	^ result values last asGooglePlacesObject: self
+	| result |
+	result := self jsonFromUrl: aUrl.
+	(result at: 'status') = 'OK' ifFalse: [ self error: 'Google Places returned ', (result at: #status). 'For more info, see https://developers.google.com/places/web-service/search#PlaceSearchStatusCodes.' ].
+	^ (result at: #results) asGooglePlacesObject: self
+]
+
+{ #category : #'as yet unclassified' }
+GooglePlacesObject class >> jsonFromUrl: aUrl [
+	^ NeoJSONReader fromString: aUrl retrieveContents.
 ]
 
 { #category : #converting }
