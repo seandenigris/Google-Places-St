@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfGooglePlaces,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfGooglePlaces'
+	#category : #BaselineOfGooglePlaces
 }
 
 { #category : #baseline }
@@ -10,11 +10,11 @@ BaselineOfGooglePlaces >> baseline: spec [
 
 	spec for: #'common' do: [
 		spec 
-			baseline: 'BabyPhexample' with: [
+			baseline: #'BabyPhexample' with: [
 				spec repository: 'github://seandenigris/Baby-Phexample' ];
-			baseline: 'NeoJSON' with: [
+			baseline: #'NeoJSON' with: [
 				spec repository: 'github://svenvc/NeoJSON' ].
 		spec package: #GooglePlaces with: [
-				spec requires: #('BabyPhexample' 'NeoJSON' ). ]. ].
+				spec requires: #(#'BabyPhexample' #'NeoJSON' ). ]. ].
 
 ]
